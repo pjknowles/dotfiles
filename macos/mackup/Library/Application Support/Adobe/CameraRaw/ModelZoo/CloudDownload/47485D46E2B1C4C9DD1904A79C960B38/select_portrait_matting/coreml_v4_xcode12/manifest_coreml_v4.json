@@ -1,0 +1,44 @@
+{
+  "id": "Model-3d206619-c3e4-4b55-a895-1038c020c90a",
+  "name": "DIM_640_0315_he_v4",
+  "description": "coreml v4, xcode12",
+  "targets": {
+    "CoreML": {
+      "components": [
+        {
+          "name": "secured_tar",
+          "path": "DIM_640_0315_model_v4_coreml_v4_xcode12.data"
+        }
+      ],
+      "inputs": [
+        {
+          "name": "0",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [
+              1,
+              4,
+              640,
+              640
+            ],
+            "dataType": "float"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "1083",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [
+              2,
+              640,
+              640
+            ],
+            "dataType": "float"
+          }
+        }
+      ]
+    }
+  }
+}

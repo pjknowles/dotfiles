@@ -1,0 +1,1 @@
+cr_sdk_initialize: Adobe Photoshop Lightroom Classic 12.4 (Macintosh), version 15.4x1508, 64-bit, Release

@@ -1,0 +1,43 @@
+{
+  "id": "Model-72af63c1-7441-4127-8cf3-0a59c2748e04",
+  "name": "dn_iter_55000",
+  "description": " automatically created via model_man.py",
+  "targets": {
+    "CoreML": {
+      "components": [
+        {
+          "name": "secured_tar",
+          "path": "dn_iter_55000_coreml_v1_xcode12.data"
+        }
+      ],
+      "inputs": [
+        {
+          "name": "data",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [
+              4,
+              320,
+              320
+            ],
+            "dataType": "double"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prob",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [
+              2,
+              320,
+              320
+            ],
+            "dataType": "double"
+          }
+        }
+      ]
+    }
+  }
+}

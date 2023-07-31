@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<prefs>
+	<property key="ShowCCDLoginItemDialog">0</property>
+	<property key="ShowCCDLoginItemDTN">0</property>
+	<property key="ARSGuid">eb984fb2-b34c-497f-a208-f6b97d34954f</property>
+	<property key="PushDeviceID">f271b30e-4fde-4da0-ab24-101925b73b25</property>
+	<property key="appsPanelVisibilityAnalytics">enabled</property>
+	<property key="CCDHome_STATUS_LIGHT">true</property>
+	<property key="showTour.LTRM">1</property>
+	<property key="showTour">1</property>
+	<property key="showTour.PHSP">1</property>
+	<property key="ccd.container.whatsNewModal.Express-beta-activation-modal-06-2023">Express-beta-activation-modal-06-2023</property>
+	<property key="ccd.container.firstlaunch">true</property>
+</prefs>

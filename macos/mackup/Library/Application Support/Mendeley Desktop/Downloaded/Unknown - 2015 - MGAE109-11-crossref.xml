@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file xmlns="http://bibtexml.sf.net/">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <dc:date>2015-01-30T09:50:20+0000</dc:date>
+      <dc:format>text/xml</dc:format>
+      <dc:identifier>urn:uuid:8c5e12b5-790f-43e1-9a12-ef4dab847c5c</dc:identifier>
+  </metadata>
+  <entry id="peverati:2014gr">
+      <article>
+         <author>Peverati, Roberto</author>
+         <author>Truhlar, Donald G</author>
+         <title>{Quest for a universal density functional: the accuracy of density functionals across a broad spectrum of databases in chemistry and physics.}</title>
+         <journal>Phil. Trans. R. Soc. A</journal>
+         <year>2014</year>
+         <volume>372</volume>
+         <number>2011</number>
+         <pages>20120476-20120476</pages>
+         <month>March</month>
+      </article>
+  </entry>
+  <entry id="karton:2008ho">
+      <article>
+         <author>Karton, Amir</author>
+         <author>Tarnopolsky, Alex</author>
+         <author>Lamère, Jean-Fran{\c c}ois</author>
+         <author>Schatz, George C</author>
+         <author>Martin, Jan M L</author>
+         <title>{Highly accurate first-principles benchmark data sets for the parametrization and validation of density functional and other approximate methods. Derivation of a robust, generally applicable, double-hybrid functional for thermochemistry and thermochemical kinetics.}</title>
+         <journal>J. Phys. Chem. A</journal>
+         <year>2008</year>
+         <volume>112</volume>
+         <number>50</number>
+         <pages>12868-12886</pages>
+         <month>December</month>
+      </article>
+  </entry>
+  <entry id="peverati:2011bn">
+      <article>
+         <author>Peverati, Roberto</author>
+         <author>Truhlar, Donald G</author>
+         <title>{Communication: A global hybrid generalized gradient approximation to the exchange-correlation functional that satisfies the second-order density-gradient constraint and has broad applicability in chemistry.}</title>
+         <journal>The Journal of Chemical Physics</journal>
+         <year>2011</year>
+         <volume>135</volume>
+         <number>19</number>
+         <pages>191102-191102</pages>
+         <month>November</month>
+         <doi>10.1063/1.3663871</doi>
+      </article>
+  </entry>
+</file>

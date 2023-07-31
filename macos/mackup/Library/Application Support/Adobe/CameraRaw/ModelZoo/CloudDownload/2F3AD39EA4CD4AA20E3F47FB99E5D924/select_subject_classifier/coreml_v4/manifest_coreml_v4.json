@@ -1,0 +1,44 @@
+{
+  "id": "7ca2c41a-bdd5-44f9-a4d3-a60b9144ab6c",
+  "name": "0422_LS_S_0052_coreml4_fixedsize",
+  "description": " automatically created via model_man.py",
+  "targets": {
+    "CoreML": {
+      "components": [
+        {
+          "name": "secured_tar",
+          "path": "0422_LS_S_0052_coreml4_fixedsize.data"
+        }
+      ],
+      "inputs": [
+        {
+          "name": "input_image",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [
+              1,
+              3,
+              224,
+              224
+            ],
+            "dataType": "float"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [
+                2,
+                1,
+                1
+            ],
+            "dataType": "float"
+          }
+        }
+      ]
+    }
+  }
+}

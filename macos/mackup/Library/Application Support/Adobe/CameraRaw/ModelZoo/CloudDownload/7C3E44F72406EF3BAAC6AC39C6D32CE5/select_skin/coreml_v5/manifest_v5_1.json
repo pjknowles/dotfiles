@@ -1,0 +1,58 @@
+{
+  "id": "Model-73c9aeb1-d06b-413e-868d-cf1b613a9ec6",
+  "name": "skin_teeth_14class_gray_15_fp16_v5_1_3",
+  "description": " automatically created via model_man.py",
+  "targets": {
+    "CoreML": {
+      "components": [
+        {
+          "name": "secured_tar",
+          "path": "skin_teeth_14class_gray_15_fp16_v5_1_3.data"
+        }
+      ],
+      "inputs": [
+        {
+          "name": "image",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [
+              1,
+              3,
+              512,
+              512
+            ],
+            "dataType": "float"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prob13",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [
+              1,
+              13,
+              512,
+              512
+            ],
+            "dataType": "float"
+          }
+        },
+        {
+          "name": "prob_teeth",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [
+              1,
+              2,
+              512,
+              512
+            ],
+            "dataType": "float"
+          }
+        }
+      ]
+    }
+  }
+}

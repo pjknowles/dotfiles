@@ -1,0 +1,39 @@
+{
+    "id": "49734667-c1a0-4ddf-a23b-5740daa307d0",
+    "name": "object_select_10Mb_quantized_bgra_multiarray",
+    "description": "This has CoreML v3 format",
+    "targets": {
+        "CoreML": {
+            "components": [
+                {
+                    "name": "secured_tar",
+                    "path": "object_select_10Mb_quantized_bgra_multiarray.data"
+                }
+            ],
+            "inputs": [
+                {
+                    "name": "data",
+                    "featureType": "tensor",
+                    "tensor": {
+                        "shape": [
+                            4,
+                            320,
+                            320
+                        ],
+                        "dataType": "double"
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "prob",
+                    "featureType": "tensor",
+                    "tensor": {
+                        "shape": [],
+                        "dataType": "double"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,13 @@
+prefs = {
+	libraryToLoad20 = "/Users/sacpjk/Pictures/Lightroom/Peter.lrcat",
+	recentLibraries20 = "recentLibraries = {\
+	\"/Users/sacpjk/Pictures/Lightroom/Peter.lrcat\",\
+}\
+",
+	recentLibraries20_missing = "recentMissingLibraries = {\
+	\"/Users/sacpjk/Pictures/Lightroom/new catalog/Peter.lrcat\",\
+	\"/Users/sacpjk/Pictures/Lightroom/new catalog/new catalog-v12.lrcat\",\
+}\
+",
+	recentLibraryBehavior20 = "UseMostRecentLibrary",
+}

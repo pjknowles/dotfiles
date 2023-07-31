@@ -1,0 +1,39 @@
+{
+  "id": "d0841b31-7fed-4941-864e-b1e84e3967e8",
+  "name": "sky_seg_base_small_float",
+  "description": " automatically created via model_man.py",
+  "targets": {
+    "CoreML": {
+      "components": [
+        {
+          "name": "secured_tar",
+          "path": "sky_seg_base_small_float.data"
+        }
+      ],
+      "inputs": [
+        {
+          "name": "data",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [
+              3,
+              224,
+              224
+            ],
+            "dataType": "float"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prob",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [2,224,224],
+            "dataType": "float"
+          }
+        }
+      ]
+    }
+  }
+}

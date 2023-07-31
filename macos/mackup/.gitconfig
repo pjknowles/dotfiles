@@ -1,0 +1,129 @@
+[user]
+	name = Peter Knowles
+	email = KnowlesPJ@Cardiff.ac.uk
+[color]
+	status = true
+	branch = true
+	diff = true
+	interactive = true
+	pager = true
+	ui = true
+[color "diff"]
+old = magenta reverse
+new = green reverse
+[color "branch"]
+  current = yellow black
+  local = yellow
+  remote = magenta
+
+
+[core]
+	pager = less -erX 
+	quotepath = false
+	excludesfile = /Users/peterk/.gitignore_global
+	mergeoptions = --no-edit
+	autocrlf = input
+	commitGraph = true
+#	pager = less -erX +'/\\@\\@ '
+#	pager = less -erX +'/@@ '
+
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+#[diff]
+#	tool = Kaleidoscope
+[gui]
+
+[difftool.latex]
+	cmd = latexdiff \"$LOCAL\" \"$REMOTE\" > _latexdiff.tex && pdflatex _latexdiff && bibtex _latexdiff && pdflatex _latexdiff && pdflatex _latexdiff && open _latexdiff.pdf  && rm -f _latexdiff.tex
+#[difftool]
+# prompt = false
+[alias]
+ ldiff = difftool -t latex
+
+
+[url "git@www.molpro.net:"]
+#	pushInsteadOf = /Users/peterk/global/git/
+	InsteadOf = server:
+
+[url "git@bitbucket.org:pjknowles/"]
+	InsteadOf = bb:
+
+[url "/Users/peterk/global/git/"]
+	InsteadOf = local:
+
+[url "git@bitbucket.org:pjknowles/myMolpro"]
+	pushInsteadOf = /Users/peterk/global/git/myMolpro.git
+	pushInsteadOf = /Users/peterk/global/git/myMolpro
+	pushInsteadOf = local:myMolpro
+	pushInsteadOf = local:myMolpro.git
+
+[url "git@www.molpro.net:MolproWeb"]
+	pushInsteadOf = /Users/peterk/global/git/MolproWeb.git
+	pushInsteadOf = /Users/peterk/global/git/MolproWeb
+	pushInsteadOf = local:MolproWeb
+	pushInsteadOf = local:MolproWeb.git
+
+[url "git@www.molpro.net:Molpro"]
+	pushInsteadOf = /Users/peterk/global/git/Molpro.git
+	pushInsteadOf = /Users/peterk/global/git/Molpro
+	pushInsteadOf = local:Molpro
+	pushInsteadOf = local:Molpro.git
+	
+[instaweb]
+httpd=webrick
+
+[alias]
+# http://gitready.com/advanced/2011/10/21/ribbon-and-catchup-reading-new-commits.html
+    ribbon = tag --force _ribbon origin/master
+    catchup = log -p --reverse --topo-order _ribbon..origin/master
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+[difftool "sourcetree"]
+	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /usr/local/bin/ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[push]
+	default = simple
+[branch]
+	autosetuprebase = always
+[diff]
+	tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[mergetool]
+	prompt = false
+[merge]
+	tool = Kaleidoscope
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[cache]
+	directory = /Volumes/Home/Users/peterk/.cache/git
+[cola]
+	spellcheck = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = master
+[credential]
+	helper = osxkeychain
+[receive]
+	advertisePushOptions = true
+	procReceiveRefs = refs/for
+[gc]
+	writeCommitGraph = true

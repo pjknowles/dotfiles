@@ -1,0 +1,39 @@
+{
+  "id": "8280daba-7443-41c6-91f2-a378883a77b1",
+  "name": "sky_seg_base_medium_float",
+  "description": " automatically created via model_man.py",
+  "targets": {
+    "CoreML": {
+      "components": [
+        {
+          "name": "secured_tar",
+          "path": "sky_seg_base_medium_float.data"
+        }
+      ],
+      "inputs": [
+        {
+          "name": "data",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [
+              3,
+              256,
+              256
+            ],
+            "dataType": "float"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prob",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [2,256,256],
+            "dataType": "float"
+          }
+        }
+      ]
+    }
+  }
+}

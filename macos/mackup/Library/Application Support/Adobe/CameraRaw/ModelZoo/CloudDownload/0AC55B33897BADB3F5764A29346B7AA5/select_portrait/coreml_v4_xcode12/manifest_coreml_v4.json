@@ -1,0 +1,44 @@
+{
+  "id": "Model-103d9374-396d-4e2c-996d-90558e584e8c",
+  "name": "por_seg_0325_v4",
+  "description": "coremlv4, xcode12",
+  "targets": {
+    "CoreML": {
+      "components": [
+        {
+          "name": "secured_tar",
+          "path": "por_seg_0325_model_v2_coreml_v4_xcode12.data"
+        }
+      ],
+      "inputs": [
+        {
+          "name": "0",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [
+              1,
+              3,
+              320,
+              320
+            ],
+            "dataType": "float"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "1085",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [
+              2,
+              320,
+              320
+            ],
+            "dataType": "float"
+          }
+        }
+      ]
+    }
+  }
+}

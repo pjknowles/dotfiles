@@ -1,0 +1,44 @@
+{
+  "id": "Model-39405234-5709-46c3-8685-602ff1a5116f",
+  "name": "trimap_seg_0326_v4",
+  "description": "coreml_v4, xcode_12",
+  "targets": {
+    "CoreML": {
+      "components": [
+        {
+          "name": "secured_tar",
+          "path": "trimap_seg_0326_model_v2_1_coreml_v4_xcode12.data"
+        }
+      ],
+      "inputs": [
+        {
+          "name": "0",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [
+              1,
+              3,
+              320,
+              320
+            ],
+            "dataType": "float"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "1087",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [
+              2,
+              320,
+              320
+            ],
+            "dataType": "float"
+          }
+        }
+      ]
+    }
+  }
+}

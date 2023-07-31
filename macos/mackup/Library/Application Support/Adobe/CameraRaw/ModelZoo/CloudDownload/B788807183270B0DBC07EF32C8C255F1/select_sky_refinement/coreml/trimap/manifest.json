@@ -1,0 +1,39 @@
+{
+  "id": "006497d7-10a3-49a8-8025-3bc57526fc40",
+  "name": "sky_seg_tri_float",
+  "description": " automatically created via model_man.py",
+  "targets": {
+    "CoreML": {
+      "components": [
+        {
+          "name": "secured_tar",
+          "path": "sky_seg_tri_float.data"
+        }
+      ],
+      "inputs": [
+        {
+          "name": "data",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [
+              4,
+              224,
+              224
+            ],
+            "dataType": "float"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prob",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [2,224,224],
+            "dataType": "float"
+          }
+        }
+      ]
+    }
+  }
+}

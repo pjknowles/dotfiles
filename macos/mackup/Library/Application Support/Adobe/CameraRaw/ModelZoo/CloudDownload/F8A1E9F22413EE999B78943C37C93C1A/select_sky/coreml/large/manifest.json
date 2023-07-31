@@ -1,0 +1,39 @@
+{
+  "id": "732ab573-35f5-4ffb-88b1-777afb0d43ba",
+  "name": "sky_seg_base_large_float",
+  "description": " automatically created via model_man.py",
+  "targets": {
+    "CoreML": {
+      "components": [
+        {
+          "name": "secured_tar",
+          "path": "sky_seg_base_large_float.data"
+        }
+      ],
+      "inputs": [
+        {
+          "name": "data",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [
+              3,
+              320,
+              320
+            ],
+            "dataType": "float"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prob",
+          "featureType": "tensor",
+          "tensor": {
+            "shape": [2,320,320],
+            "dataType": "float"
+          }
+        }
+      ]
+    }
+  }
+}
